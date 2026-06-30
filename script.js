@@ -75,7 +75,7 @@ fetch("header.html?v=" + Date.now())
   });
 
 // Загружаем футер — отдельно от хедера
-fetch("/footer.html")
+fetch("footer.html")
   .then((res) => res.text())
   .then((html) => {
     const placeholder = document.getElementById("footer-placeholder");
