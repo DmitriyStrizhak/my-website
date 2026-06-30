@@ -1,5 +1,5 @@
 // Загружаем хедер
-fetch("/header.html?v=" + Date.now())
+fetch("header.html?v=" + Date.now())
   .then((res) => res.text())
   .then((html) => {
     const placeholder = document.getElementById("header-placeholder");
